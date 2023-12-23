@@ -1,0 +1,102 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum servico 10",
+    "description": "Alguma descricao",
+    "price": 1600,
+    "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+}
+
+###
+GET http://localhost:3000/api/services
+
+
+###
+GET  http://localhost:3000/api/services/657442f2ce10fe4485179e7c
+
+###
+DELETE http://localhost:3000/api/services/65743e1f408a30d216e85a49
+
+###
+PUT http://localhost:3000/api/services/65743f1bce10fe4485179e77
+Content-Type: application/json
+
+{
+    "name": "TESTE DO JULIO CAIXA ALTA",
+    "description": "TESTE DO JULIO CAIXA ALTA",
+    "price": 2500,
+    "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+
+}
+
+###
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 4",
+    "author": "Matheus",
+    "description": "Wma festa de aniversario",
+    "budget": 12000,
+    "image": "https://media.istockphoto.com/id/1407667294/pt/foto/milk-or-yogurt-splash-with-strawberries-isolated-on-white-background-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=5Nt34m3uY9k2-G8NF0ikR8ZmauY9ChGFLfiCfoLs0Ks=",
+    "services": [
+        {
+            "name": "Algum servico 10",
+            "description": "Alguma descricao",
+            "price": 3000,
+            "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+
+        },
+        {
+            "name": "Algum servico 10",
+            "description": "Alguma descricao",
+            "price": 1600,
+            "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+
+        }
+    ]
+
+}
+
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET  http://localhost:3000/api/parties/6586c646e3417bcb119565a1
+
+
+DELETE http://localhost:3000/api/parties/3724723
+
+
+###
+
+###
+PUT http://localhost:3000/api/parties/6586c416e3417bcb1195659d
+Content-Type: application/json
+
+{
+    "title" : "Meu evento em Gießen",
+    "author" : "Klayton SP ",
+    "description" : "Meu evento em Gießen com Klayton ",
+    "budget" : 3000,
+    "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp",
+    "services": [
+        {
+            "name": "Meu evento em Gießen Algum servico 1",
+            "description": "Meu evento em Gießen Alguma descricao",
+            "price": 1000,
+            "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+        },
+        {
+            "name": "Meu evento em Gießen Algum servico 2",
+            "description": "Alguma descricao",
+            "price": 900,
+            "image": "https://conteudo.imguol.com.br/c/noticias/1b/2023/12/05/unidade-de-petroleo-da-petrobras-no-rio-solimoes-em-coari-am-1701808394443_v2_300x225.png.webp"
+        }
+    ]
+    
+}
